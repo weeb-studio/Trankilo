@@ -1,0 +1,7 @@
+{
+  "name": "Trankilo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
