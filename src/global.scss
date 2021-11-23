@@ -24,3 +24,32 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+.bg-primary{
+    background-color: #6403FC;
+}
+
+.bg-secondary{
+    background-color: #F79D31;
+}
+
+.border-primary{
+    border-color: #6403FC;
+}
+
+.border-secondary{
+    border-color: #F79D31;
+}
+
+.text-primary{
+    color: #6403FC;
+}
+
+.text-secondary{
+    color: #F79D31;
+}
+
+.divider{
+    border-top-width: 1px;
+}

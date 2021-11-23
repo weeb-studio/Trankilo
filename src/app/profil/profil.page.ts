@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfilPage implements OnInit {
 
+
+  items = [
+    {title : 'Mon profil', to:'mon-profil'},
+    {title : 'Mes trajets', to:'mes-trajets'},
+    {title : 'Mes expéditions', to:'mes-expeditions'},
+    {title : 'Mes messages', to:''},
+    {title : 'Invites tes amis', to:''},
+    {title : 'Questions fréquentes', to:''},
+    {title : 'Nous contacter', to:''},
+    {title : 'CGU', to:''},
+  ]
   constructor() { }
 
   ngOnInit() {

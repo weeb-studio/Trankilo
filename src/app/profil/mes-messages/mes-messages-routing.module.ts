@@ -1,19 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ProfilPage } from './profil.page';
+import { MesMessagesPage } from './mes-messages.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: ProfilPage
-  },
- 
-
+    component: MesMessagesPage
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class ProfilPageRoutingModule {}
+export class MesMessagesPageRoutingModule {}
