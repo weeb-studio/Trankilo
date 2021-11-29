@@ -9,14 +9,20 @@ const routes: Routes = [
   {
     path: 'profil',
     loadChildren: () => import('./profil/profil.module').then( m => m.ProfilPageModule)
-  },  {
+  },
+  {
     path: 'inscription',
     loadChildren: () => import('./pages/inscription/inscription.module').then( m => m.InscriptionPageModule)
   },
   {
     path: 'connexion',
     loadChildren: () => import('./pages/connexion/connexion.module').then( m => m.ConnexionPageModule)
-  }
+  },
+  {
+    path: 'confirmation-email',
+    loadChildren: () => import('./pages/confirmation-email/confirmation-email.module').then( m => m.ConfirmationEmailPageModule)
+  },
+
 
 ];
 @NgModule({

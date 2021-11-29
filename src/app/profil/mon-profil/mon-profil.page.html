@@ -13,7 +13,7 @@
           <ion-label>Mes informations</ion-label>
           <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
         </ion-item>
-        <ion-item class="">
+        <ion-item class="" routerLink="../mon-profil/modifier-mot-de-passe">
           <ion-label>Mot de passe</ion-label>
           <ion-button fill="clear" slot="end">
             <img src="assets/icon/write.svg" alt="">
@@ -22,7 +22,7 @@
         <ion-item>
           <ion-label>Piece d’identité</ion-label>
         </ion-item>
-        <ion-item>
+        <ion-item (click)="confirmTel()" detail="false">
           <ion-label>Téléphone</ion-label>
         </ion-item>
         <ion-item>
@@ -30,7 +30,7 @@
         </ion-item>
         <ion-item class="h-16">
           <ion-label>Fermer definitivement votre compte</ion-label>
-          <ion-button fill="clear" slot="end" class="text-red-600" (click)>supprimer</ion-button>
+          <ion-button fill="clear" slot="end" class="text-red-600" (click)="confirmationDelete()">supprimer</ion-button>
         </ion-item>
       </ion-list>
     </div>

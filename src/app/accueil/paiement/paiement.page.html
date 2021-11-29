@@ -1,0 +1,52 @@
+<ion-content>
+  <div class="mt-3">
+    <ion-button fill="clear" (click)="myBackButton()" class="text-black">
+      <ion-icon slot="start" name="chevron-back-outline"></ion-icon>
+    </ion-button>
+  </div>
+  <div class="mb-5">
+    <div class="flex flex-row items-center pl-10 space-x-5 my-5">
+      <ion-icon name="lock-closed-outline" class="text-blue-600"></ion-icon>
+      <div class="">Paiement securisé</div>
+    </div>
+    <div class="flex justify-end pr-5">
+      <div class="flex items-end flex-row space-x-2">
+        <img src="assets/icon/visa.svg" alt="">
+        <img src="assets/icon/mastercard.svg" alt="">
+        <img src="assets/icon/american_express.svg" alt="">
+      </div>
+    </div>
+    <ion-card class="flex flex-col items-center py-5 h-24">
+      <div class="text-xl">
+        <span>Montant à payer</span> : <span class="text-secondary">99,00 €</span>
+      </div>
+      <ion-icon size="large" name="chevron-down-outline"></ion-icon>
+    </ion-card>
+    <form action="" class="px-5 space-y-5">
+      <div class="flex flex-col">
+        <ion-label>Titulaire de la carte</ion-label>
+        <ion-input placeholder="Non ecrit sur la carte" type="text" class="rounded-md"></ion-input>
+      </div>
+      <div class="flex flex-col">
+        <ion-label>Numéro de carte</ion-label>
+        <ion-input placeholder="" type="number" class="rounded-md"></ion-input>
+      </div>
+      <div class="flex flex-col">
+        <ion-label>Date d’expiration</ion-label>
+        <ion-input placeholder="MM / AA" type="text" class="rounded-md"></ion-input>
+      </div>
+      <div class="flex flex-col">
+        <ion-label>Cryptogramme</ion-label>
+        <ion-input placeholder="Exemple : 123" type="text" class="rounded-md"></ion-input>
+      </div>
+      <div class="flex items-start space-x-5">
+        <ion-checkbox class=""></ion-checkbox>
+        <div class="">
+          J’enreigistre cette carte pour mes futurs paiement
+          En cliquant sur valider, j’accepte les <span class="text-secondary">Conditions Générales d’Utilisation</span>
+        </div>
+      </div>
+      <ion-button fill="clear" expand="block" class="bg-secondary rounded-xl text-white text-lg">Payer</ion-button>
+    </form>
+  </div>
+</ion-content>

@@ -1,9 +1,14 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>inviter-amis</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+  <div class="flex items-center mt-10 mb-16 w-full">
+    <ion-button fill="clear" (click)="myBackButton()" class="text-black">
+      <ion-icon slot="start" name="chevron-back-outline"></ion-icon>
+    </ion-button>
+    <div class="font-bold text-2xl">Invites tes amis</div>
+  </div>
+  <div class="px-5">
+    <div class="flex mb-10 justify-center">
+      <img src="assets/icon/add_friend.svg" alt="">
+    </div>
+    <ion-button fill="clear"expand="block" class="rounded-xl text-xl bg-secondary text-white">Invites tes amis</ion-button>
+  </div>
 </ion-content>

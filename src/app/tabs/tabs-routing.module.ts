@@ -41,7 +41,11 @@ const routes: Routes = [
               {
                 path: 'mes-informations',
                 loadChildren: () => import('../profil/mon-profil/mes-informations/mes-informations.module').then( m => m.MesInformationsPageModule)
-              }
+              },
+              {
+                path: 'modifier-mot-de-passe',
+                loadChildren: () => import('../profil/mon-profil/modifier-mot-de-passe/modifier-mot-de-passe.module').then( m => m.ModifierMotDePassePageModule)
+              },
             ]
           },
           {
@@ -54,7 +58,16 @@ const routes: Routes = [
           },
           {
             path: 'mes-messages',
-            loadChildren: () => import('../profil/mes-messages/mes-messages.module').then( m => m.MesMessagesPageModule)
+            children : [
+              {
+                path:'',
+                loadChildren: () => import('../profil/mes-messages/mes-messages.module').then( m => m.MesMessagesPageModule)
+              },
+              {
+                path: 'messages-details',
+                loadChildren: () => import('../profil/mes-messages/messages-details/messages-details.module').then( m => m.MessagesDetailsPageModule)
+              }
+            ]
           },
           {
             path: 'inviter-amis',
@@ -71,7 +84,36 @@ const routes: Routes = [
           {
             path: 'cgu',
             loadChildren: () => import('../profil/cgu/cgu.module').then( m => m.CguPageModule)
-          }
+          },
+          {
+            path: 'gestion-colis',
+            children : [
+              {
+                path : '',
+                loadChildren: () => import('../profil/gestion-colis/gestion-colis.module').then( m => m.GestionColisPageModule)
+              },
+              {
+                path: 'je-transporte',
+                loadChildren: () => import('../profil/gestion-colis/je-transporte/je-transporte.module').then( m => m.JeTransportePageModule)
+              },
+              {
+                path: 'j-espedie',
+                loadChildren: () => import('../profil/gestion-colis/j-espedie/j-espedie.module').then( m => m.JEspediePageModule)
+              },
+              {
+                path: 'transporter-colis',
+                loadChildren: () => import('../profil/gestion-colis/transporter-colis/transporter-colis.module').then( m => m.TransporterColisPageModule)
+              },
+              {
+                path: 'envoyer-colis',
+                loadChildren: () => import('../profil/gestion-colis/envoyer-colis/envoyer-colis.module').then( m => m.EnvoyerColisPageModule)
+              },
+              {
+                path: 'livraison',
+                loadChildren: () => import('../profil/gestion-colis/livraison/livraison.module').then( m => m.LivraisonPageModule)
+              }
+            ]
+          },
         ]
       },
       {

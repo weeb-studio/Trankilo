@@ -12,11 +12,12 @@ export class ProfilPage implements OnInit {
     {title : 'Mon profil', to:'mon-profil'},
     {title : 'Mes trajets', to:'mes-trajets'},
     {title : 'Mes expéditions', to:'mes-expeditions'},
-    {title : 'Mes messages', to:''},
-    {title : 'Invites tes amis', to:''},
-    {title : 'Questions fréquentes', to:''},
-    {title : 'Nous contacter', to:''},
-    {title : 'CGU', to:''},
+    {title : 'Mes messages', to:'mes-messages'},
+    {title : 'Gestion de colis', to:'gestion-colis'},
+    {title : 'Invites tes amis', to:'inviter-amis'},
+    {title : 'Questions fréquentes', to:'questions-frequentes'},
+    {title : 'Nous contacter', to:'nous-contacter'},
+    {title : 'CGU', to:'cgu'},
   ]
   constructor() { }
 

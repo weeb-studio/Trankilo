@@ -1,9 +1,30 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>nous-contacter</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+  <div class="flex items-center mt-10 mb-16 w-full">
+    <ion-button fill="clear" (click)="myBackButton()" class="text-black">
+      <ion-icon slot="start" name="chevron-back-outline"></ion-icon>
+    </ion-button>
+    <div class="font-bold text-2xl">Nous contacter</div>
+  </div>
+  <div class="">
+    <form action="" class="px-5">
+      <div class="form-field">
+        <label [ngClass]="focused ? 'label-focused' : ''">objet</label>
+        <input
+          type="text"
+          (focus)="focused = true"
+          (blur)="onBlur($event)"
+        />
+      </div>
+      <div class="form-fields">
+        <label [ngClass]="focused ? 'label-focused' : ''">Commentaires</label>
+        <textarea
+          cols="8"
+          (focus)="focused = true"
+          (blur)="onBlur($event)"
+        >
+        </textarea>
+      </div>
+      <ion-button fill="clear" expand="block" class="bg-secondary rounded-xl text-white text-xl mt-10">Envoyer</ion-button>
+    </form>
+  </div>
 </ion-content>
