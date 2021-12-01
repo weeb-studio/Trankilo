@@ -1,5 +1,6 @@
 <ion-content>
-  <div class="flex justify-end pr-10 pt-10">
+  <div class="flex justify-between pt-5 px-5">
+    <ion-icon slot="start" size="large" name="chevron-back-outline" (click)="myBackButton()"></ion-icon>
     <ion-icon slot="end" size="large" name="notifications-outline"></ion-icon>
   </div>
   <div class="px-5 space-y-5 mb-10">
@@ -45,7 +46,7 @@
           <ion-label position="stacked">Code postal*</ion-label>
           <ion-input type="text" placeholder="" class="border-2 rounded-md w-full"></ion-input>
         </ion-item>
-        <ion-item>
+        <ion-item lines="none">
           <ion-label position="stacked">Ville*</ion-label>
           <ion-input type="text" placeholder="" class="border-2 rounded-md w-full"></ion-input>
         </ion-item>

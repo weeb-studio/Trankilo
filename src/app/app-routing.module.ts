@@ -22,6 +22,11 @@ const routes: Routes = [
     path: 'confirmation-email',
     loadChildren: () => import('./pages/confirmation-email/confirmation-email.module').then( m => m.ConfirmationEmailPageModule)
   },
+  {
+    path: '',
+    loadChildren: () => import('./ambassadeur/ambassadeur.module').then( m => m.AmbassadeurPageModule)
+  },
+
 
 
 ];

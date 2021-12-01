@@ -1,12 +1,18 @@
 <ion-content>
-  <div class="flex justify-end pr-10 pt-10">
-    <ion-icon slot="end" size="large" name="notifications-outline"></ion-icon>
-  </div>
-  <div class="mt-10 px-5 space-y-64">
-    <div class="text-center text-2xl font-bold">Gestion de colis</div>
-    <div class="space-y-5">
-      <ion-button fill="clear" expand="block" class="rounded-2xl text-white bg-secondary" routerLink="../transporter-colis">Prise en charge</ion-button>
-      <ion-button fill="clear" expand="block" class="rounded-2xl text-white bg-secondary" routerLink="../livraison">Livraison</ion-button>
+  <div class="relative">
+    <div class="flex justify-between pt-5 px-5">
+      <ion-icon slot="start" size="large" name="chevron-back-outline" (click)="myBackButton()"></ion-icon>
+      <ion-icon slot="end" size="large" name="notifications-outline"></ion-icon>
+    </div>
+    <div class="mt-10 px-5 space-y-32">
+      <div class="text-center text-2xl font-bold">Gestion de colis</div>
+      <div class="space-y-5">
+        <ion-button fill="clear" expand="block" class="rounded-2xl text-white bg-secondary" routerLink="../transporter-colis">Prise en charge</ion-button>
+        <ion-button fill="clear" expand="block" class="rounded-2xl text-white bg-secondary" routerLink="../livraison">Livraison</ion-button>
+      </div>
+    </div>
+    <div class="fixed -bottom-20 left-0">
+      <img src="assets/icon/colis.svg" alt="">
     </div>
   </div>
 </ion-content>

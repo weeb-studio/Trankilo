@@ -50,6 +50,10 @@
     color: #F79D31;
 }
 
+.bg-secondary-op {
+    background-color: rgba($color: #F79D31, $alpha: 0.25) !important;
+  }
+
 .divider{
     border-top-width: 1px;
 }

@@ -3,5 +3,13 @@ ion-item{
 
     ion-input{
         --padding-start: 30px;
+        --border-color: var(--ion-color-danger, #F79D31);
+        :host{
+            border-color: #F79D31 !important;
+        }
     }
+    :host{
+        border-color: #F79D31 !important;
+    }
+
 }
