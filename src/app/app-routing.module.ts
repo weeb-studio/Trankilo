@@ -26,6 +26,12 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./ambassadeur/ambassadeur.module').then( m => m.AmbassadeurPageModule)
   },
+  {
+    path: 'details-expedition',
+    loadChildren: () => import('./shared/details-expedition/details-expedition.module').then( m => m.DetailsExpeditionPageModule)
+  },
+  
+
 
 
 

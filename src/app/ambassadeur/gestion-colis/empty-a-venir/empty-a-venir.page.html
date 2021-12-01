@@ -1,0 +1,26 @@
+<ion-content>
+  <div class="flex justify-between pt-5 px-5">
+    <ion-icon slot="start" size="large" name="chevron-back-outline" (click)="myBackButton()"></ion-icon>
+    <ion-icon slot="end" size="large" name="notifications-outline"></ion-icon>
+  </div>
+  <div class="px-5">
+    <div class="text-center font-bold text-2xl my-5">Colis à venir</div>
+    <ion-segment (ionChange)="segmentChanged($event)" class="bg-secondary my-5 h-14">
+      <ion-segment-button value="jour" class="text-lg">
+        <ion-label>Jour</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="semaine" class="text-lg">
+        <ion-label>Semaine</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="mois" class="text-lg">
+        <ion-label>Mois</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+    <div class="text-center my-5 text-lg">
+      <ion-text color="light">Vous n’avez aucun colis</ion-text>
+    </div>
+    <div class="flex justify-center mt-24">
+      <img src="assets/icon/icon_empty1.svg" alt="">
+    </div>
+  </div>
+</ion-content>

@@ -19,6 +19,18 @@ const routes: Routes = [
   {
     path: 'colis-livres',
     loadChildren: () => import('./colis-livres/colis-livres.module').then( m => m.ColisLivresPageModule)
+  },
+  {
+    path: 'empty-a-venir',
+    loadChildren: () => import('./empty-a-venir/empty-a-venir.module').then( m => m.EmptyAVenirPageModule)
+  },
+  {
+    path: 'empty-recus',
+    loadChildren: () => import('./empty-recus/empty-recus.module').then( m => m.EmptyRecusPageModule)
+  },
+  {
+    path: 'empty-livres',
+    loadChildren: () => import('./empty-livres/empty-livres.module').then( m => m.EmptyLivresPageModule)
   }
 ];
 

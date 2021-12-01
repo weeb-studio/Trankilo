@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: MesDiscussionsPage
+  },
+  {
+    path: 'details',
+    loadChildren: () => import('./details/details.module').then( m => m.DetailsPageModule)
   }
 ];
 

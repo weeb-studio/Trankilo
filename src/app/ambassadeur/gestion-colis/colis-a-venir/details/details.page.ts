@@ -2,17 +2,12 @@ import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-colis-a-venir',
-  templateUrl: './colis-a-venir.page.html',
-  styleUrls: ['./colis-a-venir.page.scss'],
+  selector: 'app-details',
+  templateUrl: './details.page.html',
+  styleUrls: ['./details.page.scss'],
 })
-export class ColisAVenirPage implements OnInit {
+export class DetailsPage implements OnInit {
 
-  items =[
-    {},
-    {},
-    {},
-  ]
   constructor(private location : Location) { }
 
   myBackButton(){
