@@ -1,5 +1,7 @@
 import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { RemisTransporteurPage } from 'src/app/shared/modals/remis-transporteur/remis-transporteur.page';
 
 @Component({
   selector: 'app-colis-recus',
@@ -13,10 +15,24 @@ export class ColisRecusPage implements OnInit {
     {},
     {},
   ]
-  constructor(private location : Location) { }
+  constructor(
+    private location : Location,
+    private modalCtrl : ModalController
+    ) { }
 
   myBackButton(){
     this.location.back();
+  }
+
+  async remisTransporteur(){
+    const modal = await this.modalCtrl.create({
+      component : RemisTransporteurPage,
+      cssClass : 'remis-css',
+      backdropDismiss : true,
+      mode : 'ios'
+    });
+    await modal.present();
+    modal.onDidDismiss();
   }
 
   ngOnInit() {

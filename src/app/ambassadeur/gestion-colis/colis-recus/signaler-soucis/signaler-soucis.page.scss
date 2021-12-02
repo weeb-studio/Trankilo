@@ -1,0 +1,10 @@
+ion-item{
+    --padding-start:0;
+    --padding-end:0;
+    ion-input{
+        --padding-start:20px;
+    }
+    ion-textarea{
+        --padding-start:20px;
+    }
+}

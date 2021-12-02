@@ -29,7 +29,11 @@ const routes: Routes = [
   {
     path: 'details-expedition',
     loadChildren: () => import('./shared/details-expedition/details-expedition.module').then( m => m.DetailsExpeditionPageModule)
+  },  {
+    path: 'remis-transporteur',
+    loadChildren: () => import('./shared/modals/remis-transporteur/remis-transporteur.module').then( m => m.RemisTransporteurPageModule)
   },
+
   
 
 

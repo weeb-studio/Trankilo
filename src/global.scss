@@ -27,11 +27,11 @@
 
 
 .bg-primary{
-    background-color: #6403FC;
+    background-color: #6403FC !important;
 }
 
 .bg-secondary{
-    background-color: #F79D31;
+    background-color: #F79D31 !important;
 }
 
 .border-primary{
@@ -66,6 +66,12 @@
 
 .details-css{
     --max-height : 300px;
+    --border-radius: 10px;
+    padding: 15px;
+}
+
+.remis-css{
+    --max-height : 200px;
     --border-radius: 10px;
     padding: 15px;
 }

@@ -11,9 +11,12 @@
           <img src="assets/icon/icon2.svg" alt="" class="w-8">
         </div>
         <div class="flex flex-col space-y-3">
-          <div class="flex flex-row space-x-1 text-lg">
+          <div class="flex flex-row space-x-1 text-lg items-center">
             <ion-text color="medium">Transport : </ion-text>
             <ion-text color="secondary">colissimo</ion-text>
+            <ion-button fill="clear" class="pl-3" (click)="remisTransporteur()">
+              <ion-icon name="ellipsis-horizontal"></ion-icon>
+            </ion-button>
           </div>
           <div class="flex flex-row space-x-5">
             <div class="flex flex-col">

@@ -11,6 +11,10 @@ const routes: Routes = [
   {
     path: 'details',
     loadChildren: () => import('./details/details.module').then( m => m.DetailsPageModule)
+  },
+  {
+    path: 'signaler-soucis',
+    loadChildren: () => import('./signaler-soucis/signaler-soucis.module').then( m => m.SignalerSoucisPageModule)
   }
 ];
 
