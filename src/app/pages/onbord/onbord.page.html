@@ -1,0 +1,63 @@
+<ion-content>
+  <div class="px-5 space-y-40 text-gray-600">
+    <ion-slides pager="true">
+      <ion-slide>
+        <div class="flex flex-col items-center space-y-16 mt-56">
+          <div class="">
+            <img src="assets/icon/logo.svg" alt="">
+          </div>
+          <div class="pb-16">
+            TRANKILO vous permet d'envoyer 
+            vos colis rapidement, pour pas 
+            cher et en toute sécurité.
+          </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="flex flex-col items-center space-y-16 mt-56">
+          <div class="">
+            <img src="assets/icon/logo.svg" alt="">
+          </div>
+          <div class="pb-16">
+            Vous habitez en province, 
+            pas de panique ! 
+            Avec TRANKILO, vous pouvez 
+            envoyer vos colis en toute 
+            sécurité à nos ambassadeurs, 
+            qui eux se chargeront de les 
+            remettre aux transporteurs.
+          </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="flex flex-col items-center space-y-16 mt-56">
+          <div class="">
+            <img src="assets/icon/logo.svg" alt="">
+          </div>
+          <div class="pb-16">
+            Nous envoyons un message 
+            au destinataire de votre colis, 
+            pour le prévenir, lorsque celui-ci 
+            est arrivé à destination.
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slides>
+    <div class="flex justify-end w-full pr-5">
+      <ion-button
+        fill="clear"
+        class="bg-primary rounded-md text-white uppercase w-full"
+        (click)="next()"
+        *ngIf="index"
+        >suivant</ion-button
+      >
+      <ion-button
+        fill="clear"
+        class="bg-primary rounded-md text-white uppercase w-full"
+        routerLink="/creermoncompte"
+        *ngIf="!index"
+        >continuer</ion-button
+      >
+    </div>
+  </div>
+</ion-content>

@@ -29,9 +29,26 @@ const routes: Routes = [
   {
     path: 'details-expedition',
     loadChildren: () => import('./shared/details-expedition/details-expedition.module').then( m => m.DetailsExpeditionPageModule)
-  },  {
+  },
+  {
     path: 'remis-transporteur',
     loadChildren: () => import('./shared/modals/remis-transporteur/remis-transporteur.module').then( m => m.RemisTransporteurPageModule)
+  },
+  {
+    path: 'details',
+    loadChildren: () => import('./shared/popover/details/details.module').then( m => m.DetailsPageModule)
+  },
+  {
+    path: 'contacter-expediteur',
+    loadChildren: () => import('./shared/modals/contacter-expediteur/contacter-expediteur.module').then( m => m.ContacterExpediteurPageModule)
+  },
+  {
+    path: 'onboard',
+    loadChildren: () => import('./pages/onbord/onbord.module').then( m => m.OnbordPageModule)
+  },
+  {
+    path: 'splash',
+    loadChildren: () => import('./pages/splash/splash.module').then( m => m.SplashPageModule)
   },
 
   
