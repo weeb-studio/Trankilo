@@ -1,9 +1,10 @@
 <ion-content>
-  <div class="flex items-center mt-10 mb-5 w-full">
+  <div class="flex items-center justify-between  mt-10 mb-5 w-full">
     <ion-button fill="clear" (click)="myBackButton()" class="text-black">
       <ion-icon slot="start" name="chevron-back-outline"></ion-icon>
     </ion-button>
     <div class="font-bold text-2xl">Mes messages</div>
+    <ion-button fill="clear"></ion-button>
   </div>
   <div class="">
     <div class="px-5">
@@ -18,7 +19,43 @@
           <div class="rounded-full">
             <img src="assets/icon/tof.svg" alt="" class="rounded-full w-12 h-10">
           </div>
-          <div class="w-full">
+          <div class="w-full"><ion-content>
+            <div class="flex items-center justify-between mt-10 mb-5 w-full">
+              <ion-button fill="clear" (click)="myBackButton()" class="text-black">
+                <ion-icon slot="start" name="chevron-back-outline"></ion-icon>
+              </ion-button>
+              <div class="font-bold text-2xl">Mes messages</div>
+              <ion-button fill="clear"></ion-button>
+            </div>
+            <div class="">
+              <div class="px-5">
+                <ion-input type="search" placeholder="Rechercher un contact" class="rounded-md ion-input-padding-10"></ion-input>
+              </div>
+              <ion-card class="bg-primary-op shadow-none h-16 bg-secondary-op" *ngFor="let item of items">
+                <div class="w-full h-full flex flex-row space-x-5 pr-5" routerLink="../mes-discussions/details">
+                  <div class="bg-secondary h-full w-3">
+                    <img src="assets/icon/barre.svg" alt="">
+                  </div>
+                  <div class="flex flex-row w-full py-2 space-x-5 items-center">
+                    <div class="rounded-full">
+                      <img src="assets/icon/tof.svg" alt="" class="rounded-full w-12 h-10">
+                    </div>
+                    <div class="w-full">
+                      <div class="flex flex-row justify-between">
+                        <div class="font-bold">Sarah</div>
+                        <div class="">16:30</div>
+                      </div>
+                      <div class="flex flex-row justify-between">
+                        <div class="">bonjour</div>
+                        <div class="rounded-full bg-secondary text-center text-white h-6 w-6 pt-px">1</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ion-card>
+            </div>
+          </ion-content>
+          
             <div class="flex flex-row justify-between">
               <div class="font-bold">Sarah</div>
               <div class="">16:30</div>

@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuestionsFrequentesPage implements OnInit {
 
-  constructor() { }
+  div1 : boolean = false;
+  div2 : boolean = false;
+  div3 : boolean = false;
+  div4 : boolean = false;
+  div5 : boolean = false;
+  constructor(private location : Location) { }
+
+  myBackButton(){
+    this.location.back()
+  }
 
   ngOnInit() {
   }

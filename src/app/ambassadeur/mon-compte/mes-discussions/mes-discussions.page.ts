@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -13,7 +14,11 @@ export class MesDiscussionsPage implements OnInit {
     {},
     {},
   ]
-  constructor() { }
+  constructor(private location : Location) { }
+
+  myBackButton(){
+    this.location.back();
+  }
 
   ngOnInit() {
   }
